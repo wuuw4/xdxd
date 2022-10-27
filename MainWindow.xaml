@@ -1,0 +1,26 @@
+﻿<Window x:Class="ExamTest2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamTest2"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="450" Width="600" FontFamily=" comic Sans ms">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <Label Margin="7" >
+                Введите логин
+            </Label>
+            <TextBox Margin="7" Name="tbLogin">
+            </TextBox>
+            <Label Margin="7">
+                Введите пароль
+            </Label>
+            <PasswordBox Margin="7" Name="pbPassword">
+            </PasswordBox>
+            <Button Margin="7" Name="btnJoin" Click="btnJoin_Click">
+                Войти
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

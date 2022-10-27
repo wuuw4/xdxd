@@ -1,0 +1,36 @@
+﻿<Window x:Class="ExamTest2.MyForms.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamTest2.MyForms"
+        mc:Ignorable="d"
+        Title="Окно админа" Height="450" Width="800" FontFamily=" comic Sans ms">
+    <Grid>
+
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top">
+            <TextBlock Margin="5"  Name="tbUserName"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center">
+            <Label Margin="10" HorizontalAlignment="Center" Background="Green">
+                adminWindow
+            </Label>
+            <Button Margin="10" Name="btnGoToAddProductWindow" Click="btnGoToAddProductWindow_Click" Background="Green">
+               Меню добавления продукта (Worked)
+            </Button>
+            <Button Margin="10" Name="btnGoToDeleteWindow" Click="btnGoToDeleteWindow_Click" Background="Green">
+                Меню удаления продукта (NWorked)
+            </Button>
+            <Button Margin="10" Name="btnGoToChangeProduct" Click="btnGoToChangeProduct_Click" Background="Green">
+                Меню изменения продукта (NWorked)
+            </Button>
+            <Button Margin="10" Name="btnGoToProductList" Click="btnGoToProductList_Click" Background="Green">
+                Лист продуктов (Worked)
+            </Button>
+            <Button Margin="10" Name="bntExitClick" Click="bntExitClick_Click" Background="Green">
+                => Назад
+            </Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>
