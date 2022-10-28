@@ -9,15 +9,25 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center">
             <Label Margin="7" >
-                Введите логин
+                Введите логин:
             </Label>
             <TextBox Margin="7" Name="tbLogin">
             </TextBox>
             <Label Margin="7">
-                Введите пароль
+                Введите пароль:
             </Label>
             <PasswordBox Margin="7" Name="pbPassword">
             </PasswordBox>
+            <Label Margin="7" HorizontalAlignment="Center">
+                Введите капчу:
+            </Label>
+            <Image Margin="14" Name="imageCapch" Height ="100" Width="100">
+            </Image>
+            <TextBox Margin="7" Name="tbCapch">
+            </TextBox>
+            <Button Margin="7" Name="btnRefreshCapch" Click="btnRefreshCapch_Click">
+                Обновить капчу
+            </Button>
             <Button Margin="7" Name="btnJoin" Click="btnJoin_Click">
                 Войти
             </Button>
