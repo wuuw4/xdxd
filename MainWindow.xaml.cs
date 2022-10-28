@@ -80,7 +80,7 @@ namespace ExamTest2
                 MessageBox.Show("Введите пароль");
                 return;
             }
-            if (tbCapch.Text != capch.IsTrue)
+            if (tbCapch.Text != capch.IsTrue || string.IsNullOrEmpty(tbCapch.Text))
             {
                 MessageBox.Show("Вы ввели неправильную капчу! - Попробуйте снова через 5 секунд");
                 for (int i = 5; i > 0; i--)
@@ -95,16 +95,16 @@ namespace ExamTest2
 
             }
             Authorization();
-            ////////if (tbLogin.Text == "admin" && pbPassword.Password == "admin1")
-            ////////{
-            ////////    MyForms.AdminWindow adminWindow = new MyForms.AdminWindow();
-            ////////    adminWindow.Show();
-            ////////    Close();
-            ////////}
-            ////////else
-            ////////{
-            ////////    MessageBox.Show("Неправильный пароль или логин");
-            ////////}
+            //if (tbLogin.Text == "admin" && pbPassword.Password == "admin1")
+            //{
+            //    MyForms.AdminWindow adminWindow = new MyForms.AdminWindow();
+            //    adminWindow.Show();
+            //    Close();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Неправильный пароль или логин");
+            //}
         }
         private void Authorization()
         {
